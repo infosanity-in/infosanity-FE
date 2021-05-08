@@ -1,8 +1,9 @@
 .home-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 10vw 30vw 10vw;
+  grid-template-rows: 64px 1fr 64px;
   grid-gap: 1em;
+  height: 100vh;
 }
 
 header,
@@ -37,5 +38,5 @@ footer {
 
 header,
 footer {
-  height: 10vw;
+  height: 64px;
 }

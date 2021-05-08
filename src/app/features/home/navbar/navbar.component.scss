@@ -1,0 +1,24 @@
+.navbar-spacer {
+  flex: 1 1 auto;
+}
+
+.navbar-container {
+  width: 100vw;
+  height: 64px;
+}
+
+.search-container {
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  margin: 0 16px;
+  box-sizing: border-box;
+  padding: 0 8px;
+  background-color: #eaeaea;
+}
+
+.margin-lr-8 {
+  margin-left: 8px !important;
+  margin-right: 8px;
+}

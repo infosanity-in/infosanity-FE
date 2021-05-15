@@ -7,13 +7,20 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { SubmitStoryComponent } from './submit-story/submit-story.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatChipsModule } from '@angular/material/chips';
 
 @NgModule({
-  declarations: [HomeComponent, NavbarComponent],
+  declarations: [HomeComponent, NavbarComponent, SubmitStoryComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
     MatToolbarModule,
+    MatChipsModule,
+    MatInputModule,
+    ReactiveFormsModule,
     MatIconModule,
     MatButtonModule,
   ],

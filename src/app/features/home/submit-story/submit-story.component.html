@@ -1,0 +1,49 @@
+<div class="sidenav-container">
+  <span class="title"> Submit a story </span>
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit()" class="story-form">
+    <mat-form-field class="full-width">
+      <mat-label>Name</mat-label>
+      <input
+        matInput
+        type="text"
+        placeholder="Ex. John Doe"
+        formControlName="name"
+      />
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Email</mat-label>
+      <input
+        matInput
+        type="email"
+        placeholder="Ex. john.doe@example.com"
+        formControlName="email"
+      />
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Title</mat-label>
+      <input matInput type="text" formControlName="title" />
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Content</mat-label>
+      <input matInput type="text" formControlName="content" />
+    </mat-form-field>
+
+    <mat-chip-list aria-label="tag-selection">
+      <mat-chip>Politics</mat-chip>
+      <mat-chip>Sports</mat-chip>
+    </mat-chip-list>
+
+    <button
+      mat-raised-button
+      type="submit"
+      [disabled]="!profileForm.valid"
+      color="primary"
+      class="button-container"
+    >
+      Submit
+    </button>
+  </form>
+</div>

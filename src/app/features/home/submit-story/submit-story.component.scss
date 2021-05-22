@@ -1,0 +1,23 @@
+.sidenav-container {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+
+  .title {
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+  .story-form {
+    width: calc(100% - 32px);
+    margin-top: 24px;
+
+    .button-container {
+      margin-top: 24px;
+    }
+  }
+}

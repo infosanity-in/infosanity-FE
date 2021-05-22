@@ -1,0 +1,57 @@
+<div>
+  <div class="tagsListContainer">
+    <mat-chip-list>
+      <mat-chip class="tagsChip" *ngFor="let tag of tags">
+        {{tag.name}}
+      </mat-chip>
+    </mat-chip-list>
+  </div>
+  <mat-divider class="feedDivider"></mat-divider>
+  <div>
+    <mat-card class="post" *ngFor="let post of posts">
+      <button class="postMenu" mat-icon-button [matMenuTriggerFor]="postMenu" aria-label="Post menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #postMenu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>share</mat-icon>
+          <span>Share</span>
+        </button>
+
+        <!-- only show to admins -->
+        <button mat-menu-item>
+          <mat-icon>edit</mat-icon>
+          <span>Edit</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>delete</mat-icon>
+          <span>Delete</span>
+        </button>
+      </mat-menu>
+      <mat-card-title class="postTitle">
+        <mat-icon class="{{post.iconClass}}" matTooltip="{{post.iconTooltip}}">
+          {{post.icon}}
+        </mat-icon>
+        {{post.title}}
+      </mat-card-title>
+      <mat-card-subtitle>
+        <span class="postSubtileLeft">
+          {{post.creator}}
+          {{post.createdAt}}
+        </span>
+        <span class="postSubtileRight">
+          {{post.reviewer}}
+        </span>
+      </mat-card-subtitle>
+      <mat-card-content>{{post.content}}</mat-card-content>
+      <mat-card-actions>
+        <mat-icon inline=true class="tagIcon">
+          tag
+        </mat-icon>
+        <span style="font-size: 12px;" *ngFor="let tag of post.tags">
+          {{tag.name}}
+        </span>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

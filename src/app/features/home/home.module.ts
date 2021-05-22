@@ -11,9 +11,14 @@ import { SubmitStoryComponent } from './submit-story/submit-story.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatChipsModule } from '@angular/material/chips';
+import { FeedComponent } from './feed/feed.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
-  declarations: [HomeComponent, NavbarComponent, SubmitStoryComponent],
+  declarations: [HomeComponent, NavbarComponent, SubmitStoryComponent, FeedComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
@@ -23,6 +28,11 @@ import { MatChipsModule } from '@angular/material/chips';
     ReactiveFormsModule,
     MatIconModule,
     MatButtonModule,
+    MatCardModule,
+    MatChipsModule,
+    MatMenuModule,
+    MatTooltipModule,
+    MatDividerModule
   ],
 })
 export class HomeModule {}

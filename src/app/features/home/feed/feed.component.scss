@@ -1,0 +1,57 @@
+.tagsListContainer {
+  max-width: 100vw;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.tagsListContainer.mat-chip-list-wrapper {
+  flex-wrap: nowrap;
+}
+
+.tagsChip {
+  display: inline-block;
+}
+
+.feedDivider {
+  margin: 8px;
+}
+
+.post {
+  margin: 8px;
+}
+
+.postTitle {
+  text-transform: capitalize;
+}
+
+.postMenu {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.postSubtileLeft {
+  font-size: smaller;
+}
+
+
+.postSubtileRight {
+  font-size: smaller;
+  float: right;
+}
+
+.validPostIcon {
+  vertical-align: middle;
+  font-size: smaller;
+  color: green;
+}
+
+.invalidPostIcon {
+  vertical-align: middle;
+  font-size: smaller;
+  color: red;
+}
+
+.tagIcon {
+  vertical-align: top;
+}
